@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inloggen - Pizzeria Sole Machina</title>
+    <link rel="stylesheet" href="Styles.CSS/styles.css">
+</head>
+<body>
+    
+    <header class="orange-bar">
+        <div class="flex-container">
+            <img src="Img/Pizza.logo" alt="Pizzeria Sole Machina Logo" class="logo">
+            <h1 class="title">Pizzeria Sole Machina</h1>
+        </div>
+        <a href="Winkelmand.html" class="cart-link">
+            <img src="Img/Winkelwagen1.png" alt="Winkelmandje" class="cart-icon">
+        </a>
+    </header>
+
+    <nav class="top-bar">
+        <ul class="top-nav">
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="Profiel.html">Bestel Overzicht</a></li>
+            <li><a href="registratie.html">Registreren</a></li>
+            <li><a href="Bestellingen.html">Bestellingen</a></li>
+            <li><a href="Inloggen.html">Inloggen</a></li>
+        </ul>
+    </nav>
+
+    <main class="login-container">
+        <header class="page-header">
+            <h1>Inloggen</h1>
+        </header>
+        <form action="/submit" method="post" class="login-form">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" maxlength="100" required>
+
+            <label for="wachtwoord">Wachtwoord</label>
+            <input type="password" id="wachtwoord" name="wachtwoord" required>
+
+            <button type="submit" class="login-button">Inloggen</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Pizzeria Sole Machina</p>
+    </footer>
+</body>
+</html>

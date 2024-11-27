@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Pizzeria Sole Machina</title>
+    <link rel="stylesheet" href="Styles.CSS/styles.css">
+</head>
+<body>
+   
+    <header class="orange-bar">
+        <div class="flex-container">
+            <img src="Img/Pizza.logo" alt="Pizzeria Sole Machina Logo" class="logo">
+            <h1 class="title">Pizzeria Sole Machina</h1>
+        </div>
+        <a href="Winkelmand.html" class="cart-link">
+            <img src="Img/Winkelwagen1.png" alt="Winkelmandje" class="cart-icon">
+        </a>
+    </header>
+
+    <nav class="top-bar">
+        <ul class="top-nav">
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="Profiel.html">Bestel Overzicht</a></li>
+            <li><a href="registratie.html">Registreren</a></li>
+            <li><a href="Bestellingen.html">Bestellingen</a></li>
+            <li><a href="Inloggen.html">Inloggen</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Menu</h1>
+        <section class="menu">
+            <article class="menu-item">
+                <img src="Img/Coca-Cola" alt="Coca-Cola" class="product-image">
+                <h3>Coca-Cola</h3>
+                <p>Prijs: €2,50</p>
+                <button onclick="addToCart('Coca-Cola')">Toevoegen aan winkelmandje</button>
+            </article>
+            <article class="menu-item">
+                <img src="Img/pizza-caprese" alt="Pizza Caprese" class="product-image">
+                <h3>Pizza Caprese</h3>
+                <p>Ingrediënten: Basilicum, Tomatensaus, Mozzarella</p>
+                <p>Prijs: €12,50</p>
+                <button onclick="addToCart('Pizza Caprese')">Toevoegen aan winkelmandje</button>
+            </article>
+            <article class="menu-item">
+                <img src="Img/Margherita" alt="Pizza Margherita" class="product-image">
+                <h3>Pizza Margherita</h3>
+                <p>Ingrediënten: Tomatensaus, Mozzarella</p>
+                <p>Prijs: €10,00</p>
+                <button onclick="addToCart('Pizza Margherita')">Toevoegen aan winkelmandje</button>
+            </article>
+            <article class="menu-item">
+                <img src="Img/Peperoni" alt="Pizza Pepperoni" class="product-image">
+                <h3>Pizza Pepperoni</h3>
+                <p>Ingrediënten: Mozzarella, Tomatensaus, Pepperoni</p>
+                <p>Prijs: €13,50</p>
+                <button onclick="addToCart('Pizza Pepperoni')">Toevoegen aan winkelmandje</button>
+            </article>
+            <article class="menu-item">
+                <img src="Img/Veggie" alt="Pizza Veggie" class="product-image">
+                <h3>Pizza Veggie</h3>
+                <p>Ingrediënten: Paprika, Tomatensaus, Champignons, Ui</p>
+                <p>Prijs: €11,50</p>
+                <button onclick="addToCart('Pizza Veggie')">Toevoegen aan winkelmandje</button>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Pizzeria Sole Machina</p>
+    </footer>
+
+    <script>
+        function addToCart(item) {
+            alert(`${item} toegevoegd aan winkelmandje.`);
+        }
+    </script>
+</body>
+</html>
+
+
